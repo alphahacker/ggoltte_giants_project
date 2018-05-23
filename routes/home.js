@@ -18,7 +18,7 @@ var util = require('../src/util.js');
 var config = require('../src/configs.js');
 var monitoring = require('../src/monitoring.js');
 var coord = require('../src/coord.js');
-var job = require('../src/periodicTask.js')
+//var job = require('../src/periodicTask.js')
 
 var app = express();
 
@@ -30,6 +30,11 @@ router.get('/cv', function(req, res, next) {
     //res.render('temp', {time: 'hello', _title: 'Alphahacker'});
     //res.render('temp', {time: Date()});
     //res.render('temp', {time: 'hello'});
+});
+
+router.get('/', function(req, res, next) {
+  //console.log("test");
+  res.render('index');
 });
 
 module.exports = router;

@@ -46,7 +46,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/redis', redis);
 app.use('/redirector', redirector);
 app.use('/timeline', timeline);
-app.use('/home', home);
+app.use('/', home);
 app.use('/alphadata', alphadata);
 
 //----------------------------------------------------------------//
