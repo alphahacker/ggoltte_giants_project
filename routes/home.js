@@ -32,7 +32,7 @@ router.get('/cv', function(req, res, next) {
     //res.render('temp', {time: 'hello'});
 });
 
-router.get('/', function(req, res, next) {
+router.get('/index', function(req, res, next) {
   //console.log("test");
   res.render('index');
 });
